@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_20sdp"
+    android:paddingRight="@dimen/_20sdp">
+
+    <EditText
+        android:id="@+id/editTextProfileEditInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/colorGrey"
+        android:gravity="top"
+        android:fontFamily="@font/agaramondpro_regular"
+        android:minLines="5"
+        android:padding="@dimen/_10sdp" />
+
+</LinearLayout>

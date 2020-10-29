@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "825989982229",
+    "firebase_url": "https://realitydatingapp-8f357.firebaseio.com",
+    "project_id": "realitydatingapp-8f357",
+    "storage_bucket": "realitydatingapp-8f357.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825989982229:android:7e6856f6d245a8f7bf861c",
+        "android_client_info": {
+          "package_name": "com.reality.datingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825989982229-k2jjo7ni2evc1b9l1l69f2sdffttlhla.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reality.datingapp",
+            "certificate_hash": "d096ae4c11c047a39ae4b20959c2e86c0eb5ae63"
+          }
+        },
+        {
+          "client_id": "825989982229-8pkh3ggc1h0lvvic4anq2q70aggau02q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuyOuBawNxc9FUt0iWcOXGbwVd4ElIk7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825989982229-8pkh3ggc1h0lvvic4anq2q70aggau02q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

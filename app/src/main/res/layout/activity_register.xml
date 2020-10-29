@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context=".ui.Activity.RegisterActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewRegisterTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="@string/register"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="32sp" />
+
+
+            <EditText
+                android:id="@+id/editTextRegisterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_capsule"
+                android:hint="@string/firstname"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:inputType="textCapWords"
+                android:padding="@dimen/_15sdp"
+                android:textColor="@color/colorBlack" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupRegisterGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioRegisterMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:buttonTint="@color/colorPink"
+                    android:onClick="radioButtonRegisterGender"
+                    android:text="@string/male"
+                    android:fontFamily="@font/agaramondpro_regular"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_15ssp" />
+
+                <RadioButton
+                    android:id="@+id/radioRegisterFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:background="@android:color/transparent"
+                    android:buttonTint="@color/colorPink"
+                    android:fontFamily="@font/agaramondpro_regular"
+                    android:onClick="radioButtonRegisterGender"
+                    android:text="@string/female"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_15ssp" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textViewRegisterBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/edittext_capsule"
+                android:hint="@string/birthday"
+                android:inputType="none"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:padding="15dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15ssp"/>
+
+
+            <EditText
+                android:id="@+id/editTextRegisterEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/edittext_capsule"
+                android:hint="@string/email"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_15ssp"
+                android:textColor="@color/colorBlack"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/editTextRegisterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@drawable/edittext_capsule"
+                android:hint="@string/password"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:inputType="textPassword"
+                android:padding="@dimen/_15ssp"
+                android:textColor="@color/colorBlack"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnRegisterPageRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/button_capsule"
+                android:backgroundTint="@color/colorPink"
+                android:gravity="center"
+                android:text="@string/register"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/agaramondpro_regular"
+                    android:text="Already registered"
+                    android:textSize="@dimen/_15ssp" />
+
+                <TextView
+                    android:id="@+id/btnRegisterPageLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/links"
+                    android:fontFamily="@font/agaramondpro_regular"
+                    android:text="@string/login"
+                    android:textSize="@dimen/_15ssp" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingRight="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:text="@string/msg_login"
+                android:textAlignment="center"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

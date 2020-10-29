@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.reality.datingapp"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 4
+        versionName "1.0.3"
+        resConfigs "en"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation "com.google.firebase:firebase-core:17.2.1"
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    implementation 'com.google.firebase:firebase-firestore:21.3.0'
+
+    implementation 'com.google.android.gms:play-services-ads:19.0.1'
+
+    implementation 'com.firebaseui:firebase-ui-firestore:4.0.1'
+
+// Recommended: Add the Firebase SDK for Google Analytics.
+    implementation 'com.google.firebase:firebase-analytics:17.4.0'
+
+    // Add the Firebase SDK for Crashlytics.
+    implementation 'com.google.firebase:firebase-crashlytics:17.0.0'
+
+
+    ///for dimens
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    //cardview
+    implementation 'androidx.cardview:cardview:1.0.0'
+    //multidex
+    implementation 'androidx.multidex:multidex:2.0.1'
+    //circleimageview
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    ///location
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    //for permistion
+    implementation 'com.nabinbhandari.android:permissions:3.8'
+//curioustechizen ago
+    implementation 'com.github.curioustechizen.android-ago:library:1.4.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    //image-cropper
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+
+    //compressor
+    implementation 'id.zelory:compressor:2.1.0'
+
+    //crystal range seek bar
+    implementation 'com.crystal:crystalrangeseekbar:1.1.3'
+    //ripple-effect
+    implementation 'com.patrickpissurno:ripple-effect:1.3.1'
+
+//card-stack-view
+    implementation "com.yuyakaido.android:card-stack-view:2.3.2"
+    //swipestack
+    implementation 'link.fls:swipestack:0.3.0'
+    //placeholderview
+    implementation 'com.mindorks.android:placeholderview:1.0.3'
+    annotationProcessor 'com.mindorks.android:placeholderview-compiler:1.0.3'
+    //carouselview
+    implementation 'com.synnapps:carouselview:0.1.5'
+    //okhttp
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2'
+    implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    //bannerslider
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+    //sweetalert
+    implementation 'com.github.f0ris.sweetalert:library:1.6.2'
+    //shinebutton
+    implementation 'com.sackcentury:shinebutton:1.0.0'
+    //eventbus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    implementation 'com.facebook.android:facebook-android-sdk:5.9.0'
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+
+    implementation 'com.anthonycr.progress:animated-progress:1.0'//animated progress\
+}
+apply plugin: 'com.google.gms.google-services'

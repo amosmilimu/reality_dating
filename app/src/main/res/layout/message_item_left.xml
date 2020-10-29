@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_8sdp"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_40sdp"
+    android:layout_marginRight="@dimen/_40sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:background="@drawable/round_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewChatMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingTop="7dp"
+        android:fontFamily="@font/agaramondpro_regular"
+        android:paddingRight="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:text="@string/start"
+        android:textSize="@dimen/_15sdp" />
+
+    <ImageView
+        android:id="@+id/imageViewChatSent"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:src="@drawable/chat_sent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageViewChatSeen"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/chat_seen"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_gravity="start"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:paddingStart="@dimen/_40sdp"
+    android:paddingLeft="@dimen/_40sdp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_blue"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingTop="7dp"
+            android:paddingRight="@dimen/_12sdp"
+            android:paddingBottom="@dimen/_7sdp">
+
+            <TextView
+                android:id="@+id/textViewChatMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:text="@string/message"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageView
+                android:id="@+id/imageViewChatSent"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:src="@drawable/chat_sent" />
+
+            <ImageView
+                android:id="@+id/imageViewChatSeen"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:src="@drawable/chat_seen" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

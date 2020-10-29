@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:padding="@dimen/_10sdp"
+    app:cardElevation="0dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/roundedImageViewLikesItemLikesImage"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_image"
+        app:riv_corner_radius="@dimen/_70sdp"
+        app:riv_mutate_background="true"
+        app:riv_oval="false" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageViewLikesItemLikesOnline"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_46sdp"
+        android:layout_marginLeft="@dimen/_46sdp"
+        android:layout_marginTop="@dimen/_46sdp"
+        android:src="@drawable/user_online"
+        android:visibility="gone" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageViewLikesItemLikesOffline"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_46sdp"
+        android:layout_marginLeft="@dimen/_46sdp"
+        android:layout_marginTop="@dimen/_46sdp"
+        android:src="@drawable/user_offline"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewLikesItemLikesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:fontFamily="@font/agaramondpro_regular"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_toEndOf="@+id/roundedImageViewLikesItemLikesImage"
+        android:layout_toRightOf="@+id/roundedImageViewLikesItemLikesImage"
+        android:text="@string/full_name"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_17ssp"/>
+
+
+    <com.github.curioustechizen.ago.RelativeTimeTextView
+        android:id="@+id/RelativeTimeLikesItemLikesDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLikesItemLikesName"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:fontFamily="@font/agaramondpro_regular"
+        android:layout_toEndOf="@+id/roundedImageViewLikesItemLikesImage"
+        android:layout_toRightOf="@+id/roundedImageViewLikesItemLikesImage"
+        android:maxLines="1"
+        android:text="@string/date"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_15ssp" />
+
+    <TextView
+        android:id="@+id/textViewLikesItemLikesUnread"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:fontFamily="sans-serif-light"
+        android:maxLines="1"
+        android:text="@string/_0"
+        android:textSize="@dimen/_15ssp"
+        android:visibility="gone" />
+
+</RelativeLayout>

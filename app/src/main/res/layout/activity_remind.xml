@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Activity.RemindActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/msg_completeprofile"
+        android:fontFamily="@font/agaramondpro_regular"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRemindGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioRemindMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:buttonTint="@color/colorPinkDark"
+            android:onClick="radioButtonRemindGender"
+            android:text="@string/male"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:fontFamily="@font/agaramondpro_regular"/>
+
+        <RadioButton
+            android:id="@+id/radioRemindFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:buttonTint="@color/colorPinkDark"
+            android:onClick="radioButtonRemindGender"
+            android:text="@string/female"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:fontFamily="@font/agaramondpro_regular"/>
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textViewRemindBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupRemindGender"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/birthday"
+        android:inputType="none"
+        android:fontFamily="@font/agaramondpro_regular"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnRemind"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextRemindPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPinkDark"
+        android:gravity="center"
+        android:text="@string/finished"
+        android:fontFamily="@font/agaramondpro_regular"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp" />
+</LinearLayout>

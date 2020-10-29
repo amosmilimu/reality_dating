@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Activity.SupportActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSupport"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:elevation="6dp"
+        android:theme="@style/ToolbarTheme"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:titleTextColor="@android:color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/textViewSupportContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:text="@string/msg_support"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSupportDifficult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:text="@string/difficulttouse" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSupportFriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:text="@string/notmakeanyfriendsofar" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSupportFreezes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:text="@string/msg_tooslow" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSupportNotify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:text="@string/msg_unconfortable" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSupportEnjoy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:text="@string/msg_liketheapp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:text="@string/msg_howweimporve" />
+
+            <EditText
+                android:id="@+id/editTextSupportOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorGrey"
+                android:gravity="top"
+                android:hint="@string/msg_youridea"
+                android:minLines="5"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:padding="15dp" />
+
+            <Button
+                android:id="@+id/buttonSupportButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agaramondpro_regular"
+                android:text="@string/send" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
